@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>J&amp;D Enterprise Home Solutions | Heating, cooling and clean air in Charlotte, NC</title>
+<meta name="description" content="J&amp;D Enterprise Home Solutions: heating, cooling and indoor air quality for homes in Charlotte, NC and the surrounding area.">
+<link rel="canonical" href="https://lasting-oasis.github.io/JD_Enterprises_HS/en/">
+<link rel="alternate" hreflang="en" href="https://lasting-oasis.github.io/JD_Enterprises_HS/en/">
+<link rel="alternate" hreflang="es" href="https://lasting-oasis.github.io/JD_Enterprises_HS/es/">
+<link rel="alternate" hreflang="x-default" href="https://lasting-oasis.github.io/JD_Enterprises_HS/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="J&amp;D Enterprise Home Solutions">
+<meta property="og:title" content="J&amp;D Enterprise Home Solutions | Heating, cooling and clean air in Charlotte, NC">
+<meta property="og:description" content="J&amp;D Enterprise Home Solutions: heating, cooling and indoor air quality for homes in Charlotte, NC and the surrounding area.">
+<meta property="og:url" content="https://lasting-oasis.github.io/JD_Enterprises_HS/en/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://lasting-oasis.github.io/JD_Enterprises_HS/assets/og/en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="J&amp;D Enterprise Home Solutions: heating, cooling and clean air in Charlotte, NC.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0d0e">
+<link rel="icon" href="/JD_Enterprises_HS/assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<style>:root{ --night:#0b0d0e;--panel:#121517;--ink:#eeede8;--muted:#8b9397;--cold:#8cc8ec;--heat:#f0884a;--paper:#eceae4;--paper-ink:#151819;--paper-muted:#4f575b }</style>
+<link rel="stylesheet" href="/JD_Enterprises_HS/assets/css/site.css">
+<link rel="stylesheet" href="/JD_Enterprises_HS/assets/css/home.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "HVACBusiness", "name": "J&D Enterprise Home Solutions", "url": "https://lasting-oasis.github.io/JD_Enterprises_HS/en/", "logo": "https://lasting-oasis.github.io/JD_Enterprises_HS/assets/brand/mark.svg"}</script>
+</head>
+<body class="page-home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-bar" role="note">Preview build · details are being confirmed with J&amp;D</div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" href="/JD_Enterprises_HS/en/">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M12 12c0-4 1.5-6.5 4-6.5M12 12c3.5 2 4.6 4.8 3.4 7M12 12c-3.5 2-6.4 1.6-7.5-.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg>
+    <span>J&amp;D Enterprise<small>Home Solutions</small></span>
+  </a>
+  <div class="top-links">
+    <a class="book-link" href="/JD_Enterprises_HS/en/contact/">Request a visit</a>
+    <a class="lang-link" href="/JD_Enterprises_HS/es/" hreflang="es" lang="es" data-lang="es">Ver en español</a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<section class="hero" data-label="Home">
+  <canvas id="air" aria-hidden="true"></canvas>
+  <h1 class="sr">J&amp;D Enterprise Home Solutions: comfort all year. Heating, cooling and clean air in Charlotte, NC.</h1>
+  <p class="w w-1" aria-hidden="true">Comfort</p>
+  <p class="readout mono"><span class="sr">Example readings: </span><span>Indoor <b class="tab">72°F</b></span><span>Humidity <b class="tab">45%</b></span><span>Outdoor <b class="tab" id="outT">94°F</b></span></p>
+  <p class="w w-2" aria-hidden="true">all</p>
+  <p class="w w-3" aria-hidden="true"><em>Year.</em></p>
+  <div class="hp">
+    <p>Heating, cooling and clean air for homes across Charlotte, NC and the surrounding towns.</p>
+    <a class="cta" href="/JD_Enterprises_HS/en/contact/">Request a visit <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<section class="system" id="system" data-label="System" aria-labelledby="sys-h">
+  <div class="sys-head">
+    <div>
+      <p class="eyebrow"><i></i>How your system works</p>
+      <h2 class="h2" id="sys-h">One loop of air.<br>One loop of refrigerant.<sup>(08)</sup></h2>
+    </div>
+    <p class="lede">Every central system is two circuits working together. Scroll through the eight parts a technician checks on a visit, and switch modes to see how a heat pump runs the same loop in reverse.</p>
+  </div>
+  <div class="sys-grid">
+    <div class="sys-stage">
+      <div class="stage-bar">
+        <div class="mode" role="group" aria-label="System mode">
+          <span class="knob" aria-hidden="true"></span>
+          <button type="button" id="mCool" aria-pressed="true">Cooling</button>
+          <button type="button" id="mHeat" aria-pressed="false">Heating</button>
+        </div>
+        <p class="stage-step mono"><b class="tab" id="stepNo">01</b> / 08 · <span id="stepName">Thermostat</span></p>
+      </div>
+      <div class="diagram" id="diagram">
+<svg viewBox="0 0 1000 720" role="img" aria-labelledby="dgTitle">
+          <title id="dgTitle">Diagram of a split HVAC system: outdoor condensing unit, refrigerant lines, expansion valve, indoor evaporator coil, blower, filter, return and supply ducts, and thermostat.</title>
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="currentColor"/></marker>
+            <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#4d585e" stroke-width="1.4"/></pattern>
+          </defs>
+
+          <!-- house context -->
+          <line x1="400" y1="40" x2="400" y2="680" stroke="#2c3438" stroke-width="1.2" stroke-dasharray="4 6"/>
+          <line x1="30" y1="680" x2="970" y2="680" class="dg-line"/>
+          <text x="40" y="70" class="dg-small">OUTDOOR</text>
+          <text x="420" y="70" class="dg-small">INDOOR</text>
+          <path d="M400 40 L400 40" />
+
+          <!-- base pipes -->
+          <path class="pipe pipe-base" stroke-width="12" d="M470 262 H262 V520"/>
+          <path class="pipe pipe-base" stroke-width="7" d="M330 470 H392 V330 H440"/>
+          <!-- refrigerant flow -->
+          <path class="flow ref f-suction" stroke-width="5" d="M470 262 H262 V520"/>
+          <path class="flow ref f-liquid" stroke-width="3.5" d="M330 470 H392 V330 H440"/>
+
+          <!-- air flow: return -->
+          <path class="flow slow f-return" stroke-width="3" d="M934 615 H566 V545" opacity=".7"/>
+          <!-- air flow: supply -->
+          <path class="flow slow f-supply" stroke-width="3" d="M566 380 V96 H950"/>
+          <path class="flow slow f-supply" stroke-width="3" d="M760 124 V200"/>
+          <path class="flow slow f-supply" stroke-width="3" d="M900 124 V200"/>
+
+          <!-- PART: supply ducts & vents (8) -->
+          <g class="part" data-part="supply">
+            <path class="dg-body hl" fill-opacity=".55" d="M522 72 H962 V120 H610 V200 H522 Z"/>
+            <path class="dg-body" d="M734 120 h52 l8 10 h-68z"/>
+            <path class="dg-body" d="M874 120 h52 l8 10 h-68z"/>
+            <g stroke="var(--supply)" stroke-width="1.6" fill="none" opacity=".9" style="color:var(--supply)">
+              <path d="M748 150 l-12 26" marker-end="url(#arr)"/><path d="M760 150 v30" marker-end="url(#arr)"/><path d="M772 150 l12 26" marker-end="url(#arr)"/>
+              <path d="M888 150 l-12 26" marker-end="url(#arr)"/><path d="M900 150 v30" marker-end="url(#arr)"/><path d="M912 150 l12 26" marker-end="url(#arr)"/>
+            </g>
+            <line x1="830" y1="72" x2="830" y2="46" class="dg-lead"/>
+            <text x="836" y="44" class="dg-label">Supply duct</text>
+            <text x="830" y="214" text-anchor="middle" class="dg-small">SUPPLY VENTS</text>
+          </g>
+
+          <!-- PART: thermostat (1) -->
+          <g class="part" data-part="tstat">
+            <path d="M660 300 H770" stroke="#4a555b" stroke-width="1.2" stroke-dasharray="3 4" fill="none"/>
+            <path d="M770 300 H800" stroke="#4a555b" stroke-width="1.2" stroke-dasharray="3 4" fill="none"/>
+            <rect class="dg-body hl" x="800" y="262" width="70" height="88" rx="12"/>
+            <rect x="812" y="276" width="46" height="34" rx="3" fill="#0a0d0e"/>
+            <text x="835" y="300" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="16" class="tstat-screen" id="tsTxt">72°</text>
+            <circle cx="835" cy="330" r="7" fill="none" stroke="#56616a"/>
+            <text x="800" y="376" class="dg-label">Thermostat</text>
+            <text x="690" y="292" class="dg-small">24V</text>
+          </g>
+
+          <!-- PART: return + filter (2) -->
+          <g class="part" data-part="filter">
+            <rect class="dg-body" fill-opacity=".55" x="660" y="582" width="250" height="66"/>
+            <rect class="hl" x="660" y="574" width="14" height="82" fill="url(#hatch)" stroke="#6b777d" stroke-width="1.4"/>
+            <rect class="dg-body hl" x="910" y="566" width="30" height="98"/>
+            <g stroke="#56616a" stroke-width="1.2"><line x1="914" y1="580" x2="936" y2="580"/><line x1="914" y1="594" x2="936" y2="594"/><line x1="914" y1="608" x2="936" y2="608"/><line x1="914" y1="622" x2="936" y2="622"/><line x1="914" y1="636" x2="936" y2="636"/><line x1="914" y1="650" x2="936" y2="650"/></g>
+            <g style="color:#aeb6ba" stroke="#aeb6ba" stroke-width="1.6" fill="none"><path d="M980 600 h-28" marker-end="url(#arr)"/><path d="M980 630 h-28" marker-end="url(#arr)"/></g>
+            <line x1="667" y1="656" x2="667" y2="700" class="dg-lead"/>
+            <text x="676" y="706" class="dg-label">Air filter</text>
+            <text x="840" y="706" class="dg-label">Return</text>
+          </g>
+
+          <!-- air handler cabinet -->
+          <rect class="dg-body" x="470" y="200" width="192" height="456" rx="4"/>
+          <line x1="470" y1="370" x2="662" y2="370" stroke="#56616a" stroke-width="1.2"/>
+          <line x1="470" y1="550" x2="662" y2="550" stroke="#56616a" stroke-width="1.2"/>
+
+          <!-- PART: evaporator coil (4) -->
+          <g class="part" data-part="evap">
+            <path class="hl" d="M492 356 L566 222 L640 356" fill="none" stroke="#8b979d" stroke-width="2.4" stroke-linejoin="round"/>
+            <g class="dg-fin">
+              <line x1="506" y1="356" x2="571" y2="238"/><line x1="520" y1="356" x2="576" y2="254"/><line x1="534" y1="356" x2="581" y2="270"/>
+              <line x1="626" y1="356" x2="561" y2="238"/><line x1="612" y1="356" x2="556" y2="254"/><line x1="598" y1="356" x2="551" y2="270"/>
+            </g>
+            <path d="M548 362 H584 L578 368 H554Z" fill="#2b3337"/>
+            <line x1="662" y1="236" x2="700" y2="236" class="dg-lead"/>
+            <text x="704" y="240" class="dg-label">Evaporator coil</text>
+          </g>
+
+          <!-- PART: blower (3) -->
+          <g class="part" data-part="blower">
+            <circle class="hl" cx="566" cy="460" r="66" fill="#101416" stroke="#6b777d" stroke-width="1.6"/>
+            <g class="spin fast">
+              <circle cx="566" cy="460" r="46" fill="none" stroke="#3d474d" stroke-width="1.2"/>
+              <g stroke="#7d898f" stroke-width="2" stroke-linecap="round">
+                <line x1="566" y1="414" x2="566" y2="428"/><line x1="598.5" y1="427.5" x2="588.6" y2="437.4"/><line x1="612" y1="460" x2="598" y2="460"/><line x1="598.5" y1="492.5" x2="588.6" y2="482.6"/><line x1="566" y1="506" x2="566" y2="492"/><line x1="533.5" y1="492.5" x2="543.4" y2="482.6"/><line x1="520" y1="460" x2="534" y2="460"/><line x1="533.5" y1="427.5" x2="543.4" y2="437.4"/>
+              </g>
+              <circle cx="566" cy="460" r="9" fill="#2b3337"/>
+            </g>
+            <line x1="632" y1="460" x2="700" y2="460" class="dg-lead"/>
+            <text x="704" y="464" class="dg-label">Blower</text>
+          </g>
+
+          <!-- PART: expansion valve (7) -->
+          <g class="part" data-part="txv">
+            <path class="hl" d="M440 320 L470 340 V320 L440 340 Z" fill="#1a2023" stroke="#8b979d" stroke-width="1.6" stroke-linejoin="round"/>
+            <rect x="449" y="302" width="12" height="12" fill="#1a2023" stroke="#8b979d" stroke-width="1.2"/>
+            <line x1="455" y1="302" x2="455" y2="292" stroke="#8b979d"/>
+            <line x1="430" y1="352" x2="430" y2="384" class="dg-lead"/>
+            <text x="412" y="398" class="dg-label">Expansion</text>
+            <text x="412" y="414" class="dg-label">valve</text>
+          </g>
+
+          <!-- outdoor condensing unit -->
+          <g>
+            <rect x="58" y="390" width="284" height="16" rx="3" fill="#1d2326" stroke="#56616a" stroke-width="1.4"/>
+            <rect class="dg-body" x="70" y="406" width="260" height="254" rx="4"/>
+            <rect x="80" y="660" width="240" height="14" fill="#1a1f21" stroke="#3a4246"/>
+          </g>
+
+          <!-- PART: condenser coil + fan (6) -->
+          <g class="part" data-part="cond">
+            <g class="dg-fin" opacity=".9">
+              <line x1="86" y1="424" x2="86" y2="644"/><line x1="96" y1="424" x2="96" y2="644"/><line x1="106" y1="424" x2="106" y2="644"/><line x1="116" y1="424" x2="116" y2="644"/><line x1="126" y1="424" x2="126" y2="644"/><line x1="136" y1="424" x2="136" y2="644"/><line x1="146" y1="424" x2="146" y2="644"/><line x1="156" y1="424" x2="156" y2="644"/><line x1="166" y1="424" x2="166" y2="644"/><line x1="176" y1="424" x2="176" y2="644"/><line x1="186" y1="424" x2="186" y2="644"/><line x1="196" y1="424" x2="196" y2="644"/><line x1="206" y1="424" x2="206" y2="644"/>
+            </g>
+            <rect class="hl" x="78" y="418" width="136" height="232" fill="none" stroke="#56616a" stroke-width="1.4"/>
+            <circle cx="146" cy="520" r="58" fill="#0d1112" stroke="#6b777d" stroke-width="1.6"/>
+            <g class="spin">
+              <path d="M146 520 C140 490 150 470 166 466 C170 486 162 506 146 520Z M146 520 C176 526 190 542 188 560 C168 560 152 546 146 520Z M146 520 C122 540 100 540 90 528 C102 510 124 506 146 520Z" fill="#56616a"/>
+            </g>
+            <circle cx="146" cy="520" r="6" fill="#8b979d"/>
+            <g class="flow f-exhaust" stroke-width="2.2" fill="none">
+              <path d="M110 380 C100 360 120 350 110 326"/>
+              <path d="M150 380 C140 360 160 350 150 326"/>
+              <path d="M190 380 C180 360 200 350 190 326"/>
+            </g>
+            <text x="58" y="304" class="dg-label">Condenser coil &amp; fan</text>
+          </g>
+
+          <!-- PART: compressor (5) -->
+          <g class="part" data-part="comp">
+            <rect x="222" y="500" width="94" height="146" fill="#0a0d0e" stroke="#3a4246" stroke-dasharray="4 3"/>
+            <rect class="hl" x="240" y="522" width="58" height="104" rx="24" fill="#1d2427" stroke="#8b979d" stroke-width="1.6"/>
+            <line x1="240" y1="560" x2="298" y2="560" stroke="#3d474d"/>
+            <path d="M282 522 V496 H214 V444" fill="none" stroke="var(--heat)" stroke-width="3" opacity=".7"/>
+            <line x1="269" y1="626" x2="269" y2="700" class="dg-lead"/>
+            <text x="278" y="706" class="dg-label">Compressor</text>
+            <text x="280" y="246" class="dg-small" id="lnSuction">SUCTION LINE</text>
+            <text x="300" y="490" class="dg-small" id="lnLiquid">LIQUID LINE</text>
+          </g>
+        </svg>      </div>
+      <div class="stage-read mono" id="stageRead"><span>Set <b class="tab">72°F</b></span><span>Room <b class="tab">75°F</b></span><span>Call <b class="tab">Cool</b></span></div>
+    </div>
+    <div class="steps" id="steps">
+      <article class="step" data-part="tstat" data-name="Thermostat">
+        <p class="mono">01 · Control</p>
+        <h3>The thermostat makes the call.</h3>
+        <p class="t">When the room drifts past its setpoint, the thermostat sends a 24-volt signal to the indoor blower and the outdoor unit at the same time. A badly placed or miscalibrated thermostat is one of the most common causes of short-cycling and uneven rooms.</p>
+        <p class="svc-tag"><b>Related service</b><a href="/JD_Enterprises_HS/en/services/smart-thermostats/">Smart thermostats</a></p>
+      </article>
+      <article class="step" data-part="filter" data-name="Return air and filter">
+        <p class="mono">02 · Return air</p>
+        <h3>Room air comes back through the filter.</h3>
+        <p class="t">Return grilles pull air from your living space into the system. The filter catches dust, pollen and pet dander before it reaches the coil. A clogged filter starves the system of air, raises your bill and can freeze the coil solid.</p>
+        <p class="svc-tag"><b>Related service</b><a href="/JD_Enterprises_HS/en/services/indoor-air-quality/">Indoor air quality</a></p>
+      </article>
+      <article class="step" data-part="blower" data-name="Blower">
+        <p class="mono">03 · Air movement</p>
+        <h3>The blower keeps the air moving.</h3>
+        <p class="t">The blower wheel pushes roughly 400 cubic feet of air per minute for every ton of capacity. Weak capacitors and dirty wheels quietly cut that airflow, so the house never quite reaches temperature.</p>
+        <p class="svc-tag"><b>Related service</b><a href="/JD_Enterprises_HS/en/services/maintenance/">Maintenance and tune-ups</a></p>
+      </article>
+      <article class="step" data-part="evap" data-name="Evaporator coil">
+        <p class="mono">04 · Indoor coil</p>
+        <h3>The coil pulls heat and moisture out.</h3>
+        <p class="t">Cold refrigerant inside the evaporator coil absorbs heat from the air passing over it. Air leaves about 18 to 20 degrees cooler, and the moisture it drops runs out through the condensate drain.</p>
+        <p class="svc-tag"><b>Related service</b><a href="/JD_Enterprises_HS/en/services/ac-repair/">AC repair and replacement</a></p>
+      </article>
+      <article class="step" data-part="comp" data-name="Compressor">
+        <p class="mono">05 · Suction line and compressor</p>
+        <h3>The compressor does the heavy lifting.</h3>
+        <p class="t">Warm refrigerant vapor travels outside through the insulated suction line. The compressor squeezes it into a hot, high-pressure gas. It is the heart of the system and the most expensive part to replace.</p>
+        <p class="svc-tag"><b>Related service</b><a href="/JD_Enterprises_HS/en/services/ac-repair/">AC repair and replacement</a></p>
+      </article>
+      <article class="step" data-part="cond" data-name="Condenser">
+        <p class="mono">06 · Outdoor coil and fan</p>
+        <h3>Heat from your house is released outside.</h3>
+        <p class="t">The condenser fan pulls outdoor air across the coil, carrying the heat away. As the refrigerant cools it condenses back into a liquid. In heating mode a heat pump flips this around and gathers heat from outdoor air instead.</p>
+        <p class="svc-tag"><b>Related service</b><a href="/JD_Enterprises_HS/en/services/heat-pumps/">Heat pumps</a></p>
+      </article>
+      <article class="step" data-part="txv" data-name="Expansion valve">
+        <p class="mono">07 · Metering</p>
+        <h3>The expansion valve resets the loop.</h3>
+        <p class="t">Liquid refrigerant returns through the small liquid line to the expansion valve. A sudden drop in pressure makes it intensely cold again, ready to absorb more heat at the coil. The refrigerant charge has to be right for this to work.</p>
+        <p class="svc-tag"><b>Related service</b><a href="/JD_Enterprises_HS/en/services/ac-repair/">AC repair and replacement</a></p>
+      </article>
+      <article class="step" data-part="supply" data-name="Supply ducts">
+        <p class="mono">08 · Delivery</p>
+        <h3>Conditioned air reaches every room.</h3>
+        <p class="t">Supply ducts carry the cooled or heated air to vents throughout the house. Leaks and loose joints, often in the attic, can lose a large share of that air before it reaches a room.</p>
+        <p class="svc-tag"><b>Related service</b><a href="/JD_Enterprises_HS/en/services/ductwork/">Ductwork</a></p>
+      </article>
+    </div>
+  </div>
+  <script type="application/json" id="dg-data">{"hot_gas_line": "HOT GAS LINE", "readings": {"cool": {"blower": ["Airflow", "1,200 CFM", "Size", "3 ton", "Per ton", "400 CFM"], "comp": ["Suction", "118 psi", "Discharge", "385 psi", "Superheat", "10\u00b0F"], "cond": ["Outdoor", "94\u00b0F", "Liquid", "104\u00b0F", "Fan", "825 rpm"], "evap": ["Return", "75\u00b0F", "Supply", "55\u00b0F", "Split", "20\u00b0F"], "filter": ["Filter", "MERV 11", "Static", "0.5 in.wc", "Change", "90 days"], "supply": ["Supply", "55\u00b0F", "Leakage", "\u003c10%", "Vents", "12"], "tstat": ["Set", "72\u00b0F", "Room", "75\u00b0F", "Call", "Cool"], "txv": ["Subcool", "10\u00b0F", "Refrigerant", "R-454B", "Coil", "40\u00b0F"]}, "heat": {"blower": ["Airflow", "1,200 CFM", "Size", "3 ton", "Per ton", "400 CFM"], "comp": ["Suction", "95 psi", "Discharge", "340 psi", "Mode", "Reversed"], "cond": ["Outdoor", "38\u00b0F", "Coil", "24\u00b0F", "Defrost", "Auto"], "evap": ["Return", "66\u00b0F", "Supply", "98\u00b0F", "Rise", "32\u00b0F"], "filter": ["Filter", "MERV 11", "Static", "0.5 in.wc", "Change", "90 days"], "supply": ["Supply", "98\u00b0F", "Leakage", "\u003c10%", "Vents", "12"], "tstat": ["Set", "70\u00b0F", "Room", "66\u00b0F", "Call", "Heat"], "txv": ["Subcool", "12\u00b0F", "Refrigerant", "R-454B", "Coil", "105\u00b0F"]}}, "suction_line": "SUCTION LINE"}</script>
+</section>
+
+<section class="services" id="services" data-label="Services" aria-labelledby="svc-h">
+  <p class="eyebrow"><i></i>Services</p>
+  <h2 class="h2" id="svc-h">Everything that moves air through your home.</h2>
+<ul class="svc-list">
+  <li class="svc">
+    <span class="n">01</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/heat-pumps/">Heat pumps</a></h3>
+    <p>One system that cools in summer and heats in winter. Repairs, replacements and new installations.</p>
+    <p class="price"></p>
+  </li>
+  <li class="svc">
+    <span class="n">02</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/ac-repair/">AC repair and replacement</a></h3>
+    <p>Warm air, ice on the lines, odd noises or a unit that won&#39;t start. Diagnosis first, then a clear choice between repair and replacement.</p>
+    <p class="price"></p>
+  </li>
+  <li class="svc">
+    <span class="n">03</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/furnaces/">Furnaces and dual fuel</a></h3>
+    <p>Igniters, flame sensors, heat exchangers and blowers, plus dual-fuel systems that pair a furnace with a heat pump.</p>
+    <p class="price"></p>
+  </li>
+  <li class="svc">
+    <span class="n">04</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/maintenance/">Maintenance and tune-ups</a></h3>
+    <p>A spring check for cooling and a fall check for heating, with a written note of what was found.</p>
+    <p class="price"></p>
+  </li>
+  <li class="svc">
+    <span class="n">05</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/indoor-air-quality/">Indoor air quality</a></h3>
+    <p>Better filters, UV lights, air purifiers and humidity control for allergies, dry winters and sticky summers.</p>
+    <p class="price"></p>
+  </li>
+  <li class="svc">
+    <span class="n">06</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/ductwork/">Ductwork</a></h3>
+    <p>Sealing, inspection, cleaning and balancing for rooms that are always too hot or too cold.</p>
+    <p class="price"></p>
+  </li>
+  <li class="svc">
+    <span class="n">07</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/ductless-mini-splits/">Ductless mini-splits</a></h3>
+    <p>Heating and cooling for rooms the ducts don&#39;t reach: additions, garages, bonus rooms and older homes.</p>
+    <p class="price"></p>
+  </li>
+  <li class="svc">
+    <span class="n">08</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/smart-thermostats/">Smart thermostats</a></h3>
+    <p>Installation, wiring and setup, including the settings a heat pump needs so it doesn&#39;t lean on costly backup heat.</p>
+    <p class="price"></p>
+  </li>
+  <li class="svc">
+    <span class="n">09</span>
+    <h3><a href="/JD_Enterprises_HS/en/services/light-commercial/">Light commercial</a></h3>
+    <p>Rooftop units and split systems for small offices, shops and restaurants, with maintenance on a set schedule.</p>
+    <p class="price"></p>
+  </li>
+</ul></section>
+
+<section class="plans" id="plans" data-label="Plans" aria-labelledby="plans-h">
+  <p class="eyebrow"><i></i>Maintenance plan</p>
+  <h2 class="h2" id="plans-h">Maintenance that stays on schedule.</h2>
+<p class="lede plans-pending">Maintenance plan details are being confirmed with J&amp;D. Ask about seasonal tune-ups when you request a visit.</p>
+</section>
+
+<div class="sheet">
+  <div class="sheet-inner">
+    <section class="reviews" id="reviews" data-label="Reviews" aria-labelledby="rev-h">
+      <p class="eyebrow"><i></i>Reviews</p>
+      <h2 class="h2" id="rev-h">Reviews from real customers will appear here.</h2>
+      <p class="lede">J&amp;D only shows reviews it can link to real customers. Once customers leave reviews on Google, they will be shown here.</p>
+    </section>
+<section class="booking" id="book" data-label="Book" aria-labelledby="book-h">
+  <div>
+    <p class="eyebrow"><i></i>Book a visit</p>
+    <h2 class="h2" id="book-h">Tell us what&#39;s going on.</h2>
+    <p class="lede">Describe the problem and the best time to reach you.</p>
+  </div>
+  <div class="form-pending"><p>Online booking is coming soon. Phone and email will appear here once J&amp;D confirms them.</p></div>
+</section>  </div>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="f-top">
+    <div>
+      <h2 class="f-h">Service area</h2>
+      <ul>
+        <li>Charlotte, NC</li>
+        <li>Matthews, NC</li>
+        <li>Mint Hill, NC</li>
+        <li>Huntersville, NC</li>
+        <li>Concord, NC</li>
+        <li>Gastonia, NC</li>
+        <li>Cornelius, NC</li>
+        <li>Fort Mill, SC</li>
+        <li>Indian Land, SC</li>
+      </ul>
+      <p class="f-note">Proposed list, being confirmed</p>
+    </div>
+    <div>
+      <h2 class="f-h">Explore</h2>
+      <ul>
+        <li><a href="/JD_Enterprises_HS/en/">Home</a></li>
+        <li><a href="/JD_Enterprises_HS/en/services/">Services</a></li>
+        <li><a href="/JD_Enterprises_HS/en/plans/">Plans</a></li>
+        <li><a href="/JD_Enterprises_HS/en/faq/">FAQ</a></li>
+        <li><a href="/JD_Enterprises_HS/en/about/">About</a></li>
+        <li><a href="/JD_Enterprises_HS/en/contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="f-h">Contact</h2>
+      <ul>
+        <li class="pending">Phone number coming soon</li>
+        <li class="pending">Hours coming soon</li>
+        <li class="pending">Email coming soon</li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-small">
+    <span>© 2026 J&amp;D Enterprise Home Solutions</span>
+    <span class="f-legal"><a href="/JD_Enterprises_HS/en/privacy/">Privacy</a><a href="/JD_Enterprises_HS/en/terms/">Terms</a><a href="/JD_Enterprises_HS/en/accessibility/">Accessibility</a></span>
+  </div>
+  <p class="wordmark" aria-hidden="true">J&amp;D</p>
+</footer>
+
+<nav class="pill" aria-label="Site">
+  <a href="/JD_Enterprises_HS/en/"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M12 12c0-4 1.5-6.5 4-6.5M12 12c3.5 2 4.6 4.8 3.4 7M12 12c-3.5 2-6.4 1.6-7.5-.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg><span class="sr">Home</span></a>
+  <span class="pill-label"><span>Home</span></span>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span class="sr">Open menu</span><i></i><i></i><i></i></button>
+</nav>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site" hidden>
+  <div class="menu-inner">
+    <p class="mono">J&amp;D Enterprise Home Solutions · Charlotte, NC</p>
+    <ul>
+      <li><a href="/JD_Enterprises_HS/en/" aria-current="page">Home</a></li>
+      <li><a href="/JD_Enterprises_HS/en/services/">Services</a></li>
+      <li><a href="/JD_Enterprises_HS/en/plans/">Plans</a></li>
+      <li><a href="/JD_Enterprises_HS/en/faq/">FAQ</a></li>
+      <li><a href="/JD_Enterprises_HS/en/about/">About</a></li>
+      <li><a href="/JD_Enterprises_HS/en/contact/">Contact</a></li>
+    </ul>
+    <p><a class="lang-link" href="/JD_Enterprises_HS/es/" hreflang="es" lang="es" data-lang="es">Ver en español</a></p>
+    <button class="menu-close" type="button">Close</button>
+  </div>
+</div>
+<script src="/JD_Enterprises_HS/assets/js/site.js" defer></script>
+<script src="/JD_Enterprises_HS/assets/js/home.js" defer></script></body>
+</html>

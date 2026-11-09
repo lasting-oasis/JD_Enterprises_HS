@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lasting-oasis.github.io/JD_Enterprises_HS/sitemap.xml
