@@ -115,8 +115,9 @@ body.heat .f-exhaust{stroke:var(--cold)}
 .field{display:grid;gap:7px}
 .field.full{grid-column:1/-1}
 .field label{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#4d5559}
-.field input,.field select,.field textarea{background:transparent;border:0;border-bottom:1px solid #a9aaa5;padding:10px 0;color:var(--paper-ink);font-size:16px;border-radius:0;outline:none;transition:border-color .2s}
+.field input,.field select,.field textarea{background:transparent;border:0;border-bottom:1px solid var(--paper-muted);padding:10px 0;color:var(--paper-ink);font-size:16px;border-radius:0;transition:border-color .2s}
 .field input:focus,.field select:focus,.field textarea:focus{border-bottom-color:var(--paper-ink)}
+.book-form :focus-visible{outline:2px solid var(--paper-ink);outline-offset:3px}
 .field textarea{resize:vertical;min-height:70px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips input{position:absolute;opacity:0;pointer-events:none}
