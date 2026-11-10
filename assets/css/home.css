@@ -155,3 +155,7 @@ body.heat .f-exhaust{stroke:var(--cold)}
   .w-2{top:36%}.w-3{top:52%}
 }
 @media (prefers-reduced-motion:reduce){.flow,.spin{animation:none}}
+
+/* Feedback survey: a checkbox sits beside its label. */
+.book-form .check{display:flex;align-items:center;gap:.6rem}
+.book-form .check input{width:1.2rem;height:1.2rem;margin:0;flex:none}

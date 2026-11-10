@@ -1,0 +1,52 @@
+/* Profit simulator (portfolio page and the kit's self-contained copy). Sliders on paper; results in a dark
+   readout panel, the same night colors as the site's system diagram. Bar colors: validated categorical set
+   (dataviz validator, dark mode, both brands' night surfaces), each segment also named with its share. */
+.sim-label{max-width:68ch;margin:0 0 clamp(28px,4vw,48px);padding-left:14px;border-left:2px solid var(--paper-ink);font-size:15px;color:var(--paper-ink)}
+.sim{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.sim-group{border:0;margin:0 0 28px;padding:0;min-width:0}
+.sim-group legend{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--paper-muted);padding:0;margin-bottom:6px}
+.sim-field{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:4px 16px;padding:12px 0 6px;border-top:1px solid var(--line)}
+.sim-field label{font-size:15px;line-height:1.35}
+.sim-field output{font-family:var(--mono);font-size:15px;font-variant-numeric:tabular-nums;color:var(--paper-ink)}
+.sim-field input[type=range]{grid-column:1/-1;width:100%;margin:6px 0 4px;height:32px;accent-color:var(--paper-ink);background:transparent;cursor:pointer}
+.sim-field input[type=range]:focus-visible{outline:2px solid var(--paper-ink);outline-offset:2px}
+.sim-reset{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--paper-ink);padding:8px 0 4px;color:var(--paper-ink)}
+.sim-reset:focus-visible{outline:2px solid var(--paper-ink);outline-offset:3px}
+.sim-out{position:sticky;top:88px;background:var(--night);color:var(--ink);padding:clamp(22px,3vw,34px);border-radius:2px;--line:rgba(238,237,232,.16)}
+.sim-out :focus-visible{outline-color:var(--ink)}
+.sim-h{font-family:var(--display);font-stretch:125%;font-weight:400;font-size:20px;letter-spacing:-.01em}
+.sim-k{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:22px}
+.sim-net{font-family:var(--display);font-stretch:125%;font-weight:300;font-size:clamp(44px,6vw,76px);line-height:1;letter-spacing:-.045em;margin-top:6px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.sim-net.is-loss{color:var(--heat)}
+.sim-sub{margin-top:8px;color:var(--muted)}
+.sim-sub b{color:var(--ink);font-weight:500}
+.sim-rows{margin-top:22px;border-top:1px solid var(--line)}
+.sim-rows div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line)}
+.sim-rows dt{color:var(--ink)}
+.sim-rows dd{margin:0;font-family:var(--mono);font-size:14px;font-variant-numeric:tabular-nums}
+.sim-rows .sub dt{padding-left:16px;color:var(--muted)}
+.sim-rows .sub dd{color:var(--muted)}
+.sim-note{margin-top:12px;font-size:13px;line-height:1.45;color:var(--muted)}
+.sim-split-h{margin-top:26px}
+.sim-bar{display:flex;gap:2px;height:14px;margin-top:10px}
+.sim-bar .seg{display:block;height:100%;min-width:0;border-radius:0}
+.sim-bar .seg:first-child{border-radius:2px 0 0 2px}
+.sim-bar .seg:last-child{border-radius:0 2px 2px 0}
+.seg-direct{background:#6b8fd0}
+.seg-overhead{background:#c4862e}
+.seg-net{background:#1fa190}
+.sim-legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:12px;font-size:14px}
+.sim-legend li{display:flex;align-items:center;gap:8px}
+.sim-legend i{display:inline-block;width:12px;height:12px;border-radius:2px}
+.sim-legend b{font-family:var(--mono);font-weight:400;font-size:13px}
+.sim-loss{margin-top:12px;color:var(--heat)}
+.sim-how{margin-top:clamp(40px,6vw,72px)}
+.sim-how .bullets{margin-top:18px}
+.sim-mini{display:none}
+@media (max-width:900px){
+  .sim{grid-template-columns:1fr}.sim-out{position:static}
+  /* on a phone the readout sits below the sliders, so a one-line net profit stays in view while sliding */
+  .sim-mini{display:flex;justify-content:space-between;align-items:baseline;position:sticky;top:0;z-index:2;margin:0 0 14px;padding:10px 14px;background:var(--night);color:var(--ink);font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+  .sim-mini b{font-family:var(--display);font-stretch:125%;font-weight:400;font-size:20px;letter-spacing:-.01em;text-transform:none}
+}
+@media (prefers-reduced-motion:reduce){.sim *{transition:none!important}}
